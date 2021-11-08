@@ -6,14 +6,24 @@ import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-yellow-300">
+  <body>
+    <header>
+      <div>
+        
+      </div>
+    </header>
+    <main className="">
       <h1 className="text-3xl">
         Read{' '}
-        <Link href="/posts/post">
+        <Link href="/posts/top">
           <a className="text-blue-500 text-3xl">this page!</a>
         </Link>
       </h1>
-    </div>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
   )
 }
 
