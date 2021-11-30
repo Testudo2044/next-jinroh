@@ -1,32 +1,46 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import React from 'react';
 import Link from 'next/link'
 
 
-const Home: NextPage = () => {
-  return (
 
-  <body>
-    <header>
-      <div>
 
+const HeaderFunction: React.FC = () =>
+  <div className="">
+    <div className="smartStyle">
+
+    </div>
+
+    <div className="PCStyle hidden lg:block">
+      <div className="bg-black ">
+        <ul className="text-2xl text-white flex">
+          <li className="lg:hover:text-3xl"><a href=""><ruby><rb>ABOUT</rb><rt>UN人狼とは</rt></ruby></a></li>
+          <li className="lg:hover:text-3xl"><a href=""><ruby><rb>RULE</rb><rt>ゲームルール</rt></ruby></a></li>
+          <li className="lg:hover:text-3xl"><a className=" " href=""><ruby><rb>SET</rb><rt>販売</rt></ruby></a></li>
+          <li className="lg:hover:text-3xl"><a href=""><ruby><rb>CHARACTER</rb><rt>役職紹介</rt></ruby></a></li>
+          <li className="lg:hover:text-3xl"><a href=""><ruby><rb>MEMBER</rb><rt>メンバー</rt></ruby></a></li>
+          <li className="lg:hover:text-3xl"><a href=""><ruby><rb>COMTACT</rb><rt>お問い合わせ</rt></ruby></a></li>
+        </ul>
       </div>
-    </header>
-    <main className="">
-      <h1 className="text-3xl">
-        Read{' '}
-        <Link href="/posts/top">
-          <a className="text-blue-500 text-3xl">this page!</a>
-        </Link>
-      </h1>
-    </main>
-    <footer>
+    </div>
+  </div>;
 
-    </footer>
-  </body>
-  )
+const MainFunction: React.FC = () =>
+  <div>
+
+  </div>;
+
+const FooterFunction: React.FC = () =>
+  <div>
+
+  </div>;
+
+
+export default function Index() {
+  return (
+    <div>
+      <HeaderFunction />
+      <MainFunction />
+      <FooterFunction />
+    </div>
+  );
 }
-
-export default Home
