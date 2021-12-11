@@ -1,5 +1,6 @@
-import React from 'react';
+/* eslint-disable tailwindcss/no-custom-classname */
 import Link from 'next/link'
+import React from 'react';
 
 
 
@@ -10,9 +11,9 @@ const HeaderFunction: React.FC = () =>
 
     </div>
 
-    <div className="PCStyle hidden lg:block">
+    <div className="hidden lg:block PCStyle">
       <div className="bg-black ">
-        <ul className="text-2xl text-white flex">
+        <ul className="flex text-2xl text-white">
           <li className="lg:hover:text-3xl">
             <Link href="/">
               <a><ruby>ABOUT<rt>UN人狼とは</rt></ruby></a>
